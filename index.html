@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Matching Game</title>
+    <meta name="description" content="">
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>🔮👾 Nad's Matching Game 👾🔮</h1>
+        </header>
+
+        <section class="score-panel">
+            <ul class="stars">
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <br>
+            </ul>
+
+            <span class="moves" style="font-size: 20px; position: fixed;"></span> <span style="font-size: 20px; margin-left: 6%;"> Moves</span>
+            <div class="restart">
+                <i class="fa fa-repeat"></i>
+            </div>
+
+              
+            <div class="timer">
+                 🕐
+                 <span class=" minutes">00</span> :
+                <span class="seconds">00</span>
+            </div>
+        </section>
+      
+     
+            <div id="canves"></div>
+   
+
+            <dialog id="pop-up">
+           <h1> Congratulations 🎈🥳</h1>
+            <p style="text-align:center; font-size: 17px">You made it in :
+                <span class="endBoxTime"></span>
+                <br> Your rating is :
+                <span class="endBoxRating"> </span>
+                <br>  Moves you made:
+                <span class="endBoxMoves"> </span>
+            </p>
+            <br>
+
+            <button onclick="restartGame()" class="btn-endBoxRestart">Paly Agan</button>
+            </dialog>
+
+
+    </div>
+
+
+
+
+
+ <script src="js/app.js"></script>
+</body>
+</html>
